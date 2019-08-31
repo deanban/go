@@ -1,5 +1,3 @@
-package main
-
 //package is a workspace or like a folder
 //so if I had more files belonging to this workspace
 //I'd need all of them to include package main
@@ -10,7 +8,13 @@ package main
 
 //specifically 'package main' is used to make an executable type package
 //'package some-random-str' is used to make a reusabe type package. When run 'go build' it doesn't create an executable file.
+package main
 
+//'import fmt' statement brings all the functionalily of 'fmt' package to the 'package main' that I created.
+//fmt is a standard library package(SLP). it means format.
+//mostly used to print things our.
+//other common SLPs include io, math, debug, net, path, encoding, crypto, etc. visit- golang.org/pkg for docs.
+//import is also commonly used for importing all the reusable packages that others made.
 import "fmt"
 
 //if 'package main' is declared, the file must have a func called main()
